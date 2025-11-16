@@ -1,3 +1,15 @@
+/* Header */
+a {
+    color: #c66b76;
+}
+
+a:visited{
+    color: #c66b76;
+}
+
+
+
+
 body { background-color: 	#82aecc;
     text-align: center;
 
@@ -15,7 +27,7 @@ h1{
 
 h4{
     text-align: center; font-family: "Chewy", system-ui;
-    font-size: 35px; color: #c66b76;
+    font-size: 28px; color: #c66b76;
 }
 
 /* User choice and Computer choice */
