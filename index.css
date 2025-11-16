@@ -1,0 +1,167 @@
+body { background-color: 	#82aecc;
+    text-align: center;
+
+}
+
+main{
+    text-align: center;
+    
+}
+/* Heading styles */
+h1{
+    text-align: center; font-family: "Chewy", system-ui;
+    font-size: 50px; color: #c66b76;
+}
+
+h4{
+    text-align: center; font-family: "Chewy", system-ui;
+    font-size: 35px; color: #c66b76;
+}
+
+/* User choice and Computer choice */
+.choice-card {
+    width: 300px;
+    height: 150px;
+    background-color:#e0c5a0;
+    font-size: 40px;
+    display:inline-flex; /* Makes responsive, choices wrap on page*/
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: transform 0.30s ease, background-color 0.10s ease; /* Animation */
+    cursor: pointer;
+    margin:30px;
+    border-color: #bc8087;
+    border-width: 10px;
+    opacity: 80%;
+    
+}
+
+
+.choice-card:active {
+    transform: scale(0.9);
+    background-color: #7d766d;
+}
+
+#computer-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    background-color:#e0c5a0;
+    font-size: 40px;
+    border-radius: 12px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Chewy", system-ui;
+    font-size: 40px;
+    color: 	rgb(93, 93, 93);
+    opacity: 80%;
+    border-color: #bc8087;
+    border-width: 10px;
+    border-style: solid;
+}
+
+/* Pop-up box*/
+#pop-up{
+    display: flex;
+  position: fixed;
+  inset: 0; /* Centers and full screens container*/
+  background-color: rgba(85, 78, 78, 0.75);
+  justify-content: center;
+  align-items: center;
+  z-index: 2000; /* Multiple stacked z-indexs, this puts it at highest level */
+  
+}
+/* Pop-up box*/
+#pop-up-content{
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    width: 600px;
+    height: 500px;
+    color:#bc8087 ;
+
+}
+
+/* Background video for pop-up*/
+.pop-up-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: cover; /* Specifically for background video to resize and fit */
+    border-radius: 12px;
+    opacity: 85%;
+}
+
+/* Text and button for pop-up*/
+.pop-up-foreground{
+    position: relative;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    font-size: 25px;
+    font-family: "Chewy", system-ui;
+    margin-top: 60px;
+}
+
+/* Close Button for pop up */
+#close-pop-up{
+    background-color:	#c66b76; 
+    border-radius: 12px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 90px;
+    color: black;
+    border-color: #bc8087;
+    border-width: 5px;
+}
+
+
+/* Results and Choices */
+#result{
+    color: #c66b76;
+    font-size: 23px;
+    margin-top: 15px;
+    font-family:  "Chewy", system-ui;
+    
+}
+
+#choices{
+    color: #c66b76;
+    font-size: 23px;
+    margin-top: 15px;
+    font-family:  "Chewy", system-ui;
+}
+
+/* Scoreboard and Reset Button */
+#scoreboard {
+    font-size: 20px;
+    color: 	rgb(93, 93, 93);
+    font-family:  "Chewy", system-ui;
+}
+
+#reset-btn{
+    background-color:#e0c5a0;
+    border-radius: 12px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-family:  "Chewy", system-ui;
+    font-size: 23px;
+    color: 	rgb(93, 93, 93);
+    border-color: #bc8087;
+    border-width: 5px;
+
+}
+
+#reset-btn:hover{
+    background-color: rgb(93, 93, 93); 
+    color:#c66b76;
+    font-family:  "Chewy", system-ui;
+    font-size: 23px;
+}

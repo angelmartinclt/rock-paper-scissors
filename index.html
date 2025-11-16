@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors!</title>
+
+<!-- CSS link -->
+    <link rel="stylesheet" href="index.css"></link>
+    
+<!-- Google Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+
+<!-- Icon link-->
+    <link rel="icon" type="image/png" href="icon.png">
+    
+</head>
+<body>
+
+    <h1>Rock , Paper , Scissors !</h1>
+
+<!-- Pop up for instructions -->
+    <section id="pop-up">
+        <div id="pop-up-content"> <!--Video background for pop up-->
+            <video autoplay muted loop playsinline class="pop-up-bg">
+            <source src="background-video.mp4" type="video/mp4" alt="background video of game"></video>
+            
+        <div class="pop-up-foreground"> <!--Text for pop up-->
+
+            <h4 class="instructions">Instructions on how to play : </h4>
+            <p class="instructions">Rock always beats scissors! Scissors always beats paper! Paper always beats rock! The computer will not choose until the player does!</p>
+            <button id="close-pop-up">Close</button>
+        </div>
+        
+        </div>
+    </section>
+
+    
+    <main >
+        <h4>Player Choice</h4>
+
+<!-- Buttons for user choice -->
+    <button id="rock-card" class= "choice-card" onclick="play ('rock')">🪨</button>
+
+    <button id="paper-card" class= "choice-card" onclick="play ('paper')">📄</button>
+
+    <button id="scissors-card" class= "choice-card" onclick="play ('scissors')">✂️</button>
+
+    
+    <h4>Computer Choice</h4>
+    <div id="computer-card">Computer waiting for player</div>
+
+    </main>
+
+
+<!-- Result and choices of the game -->
+    <div id="result"></div>
+    <div id="choices"></div>
+
+<!-- Scores -->
+    <div id="scoreboard">
+        <h4>Scoreboard</h4>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+        <p>Ties: <span id="ties">0</span></p>
+    </div>
+
+<!-- Reset Scores Button -->
+    <button id="reset-btn">Reset Game Score</button>
+
+    
+
+<!-- Javascript link -->
+    <script src="index.js"></script>
+</body>
+</html>
